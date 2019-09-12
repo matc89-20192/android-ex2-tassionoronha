@@ -61,9 +61,8 @@ public class OutraActivity extends AppCompatActivity implements View.OnClickList
 
     private void updateName(){
         Intent data;
-        String nome = editText.getText().toString();
         data = new Intent();
-        data.putExtra("novoNome", nome);
+        data.putExtra("novoNome", editText.getText().toString());
         setResult(RESULT_OK, data);
         finish();
     }
